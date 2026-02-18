@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sohan Mahmud | Best UI/UX Designer & React Developer in Bangladesh</title>
+    <meta name="google-site-verification" content="zmY9cXbkNDG8f2CknhdQRfmQ6xjXXQVejQifNz-CUBc" />
+<meta name="title" content="Sohan Mahmud | Best UI/UX Designer & React Developer in Bangladesh">
+<meta name="description" content="Looking for the best Web Developer? Sohan Mahmud is a professional UI/UX Designer & Frontend Expert specializing in React, 3D Animations, and High-Performance Websites. Hire for custom web design today.">
+
+<meta name="keywords" content="Sohan Mahmud, Web Developer Bangladesh, Best UI/UX Designer in Dhaka, Hire React Developer, Frontend Developer Bangladesh, 3D Web Designer, Three.js Expert, Modern Portfolio Website, Professional Web Design Service, Responsive Website Maker, React JS Expert, Tailwind CSS Developer, Creative Web Designer, Website Redesign Service, eCommerce Website Developer, Landing Page Design, Top Rated Freelancer Bangladesh">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sohanmahmud-portfolio.netlify.app/">
+<meta property="og:title" content="Sohan Mahmud | Creative UI/UX & Web Developer">
+<meta property="og:description" content="Need a stunning website? I build modern, interactive, and high-performance websites using React & 3D tech. Check out my portfolio!">
+<meta property="og:image" content="/profile.png">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://sohan-portfolio.netlify.app/">
+<meta property="twitter:title" content="Sohan Mahmud | Best UI/UX Designer & React Developer">
+<meta property="twitter:description" content="Professional Frontend Developer & UI/UX Designer. Expert in React, Tailwind, and 3D Web Experiences.">
+<meta property="twitter:image" content="/profile.png">
+
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="author" content="Sohan Mahmud">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#0f1724',
+                orange: '#f39c12',
+                orangeDark: '#e67e22',
+                card: 'rgba(255,255,255,0.05)',
+              }
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'blob': 'blob 7s infinite',
+              'rise': 'rise 10s infinite linear',
+              'scroll': 'scroll 40s linear infinite',
+              'scroll-reverse': 'scroll-reverse 40s linear infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              blob: {
+                "0%": { transform: "translate(0px, 0px) scale(1)" },
+                "33%": { transform: "translate(30px, -50px) scale(1.1)" },
+                "66%": { transform: "translate(-20px, 20px) scale(0.9)" },
+                "100%": { transform: "translate(0px, 0px) scale(1)" },
+              },
+              rise: {
+                '0%': { bottom: '-10px', transform: 'translateX(0)', opacity: '0' },
+                '50%': { opacity: '0.6' },
+                '100%': { bottom: '110%', transform: 'translateX(-20px)', opacity: '0' },
+              },
+              scroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-100%)' },
+              },
+              'scroll-reverse': {
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* --- GLOBAL SCROLL & LAYOUT SETTINGS --- */
+      
+      html {
+        scroll-behavior: smooth; /* Enable native smooth scrolling */
+      }
+
+      html, body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scroll caused by animations */
+        overflow-y: auto;   /* Ensure vertical scroll is always possible */
+        background-color: transparent !important; /* Transparent to show fixed BackgroundAnimation */
+      }
+
+      /* 2. Set Root to flow naturally */
+      #root {
+        width: 100%;
+        min-height: 100vh;
+        overflow: visible;
+        position: relative;
+        z-index: 1; /* Ensure root content sits above background canvas */
+      }
+
+      /* 3. Global defaults */
+      body {
+        color: #ffffff;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      img, video, canvas, svg {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f1724; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #374151; 
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #f39c12; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.1.5",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
+    "lenis": "https://esm.sh/lenis@1.1.18",
+    "three": "https://esm.sh/three@0.160.0",
+    "three/examples/jsm/controls/OrbitControls": "https://esm.sh/three@0.160.0/examples/jsm/controls/OrbitControls.js",
+    "gsap": "https://esm.sh/gsap@3.12.5",
+    "three/": "https://esm.sh/three@^0.182.0/",
+    "@emailjs/browser": "https://esm.sh/@emailjs/browser@4.1.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
