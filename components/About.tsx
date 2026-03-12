@@ -5,7 +5,7 @@ import { Target, Zap, Layout, BookOpen } from 'lucide-react';
 // @ts-ignore
 // This comment above tells TypeScript to ignore the "Cannot find module" error. 
 // Vite will still find the image and build it correctly.
-import profileImg from './profile.png'; 
+import profileImg from './Sohan.png'; 
 
 const uspItems = [
   {

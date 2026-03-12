@@ -10,6 +10,7 @@ import { Work } from './components/Work';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ParticleBackground } from './components/ParticleBackground';
+import { AIAssistant } from './components/AIAssistant';
 
 function App() {
   const location = useLocation();
@@ -41,6 +42,7 @@ function App() {
        </main>
        
        <Footer />
+       <AIAssistant />
        
        <div className="fixed inset-0 pointer-events-none -z-40 overflow-hidden mix-blend-screen">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:3rem_3rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-10" />
