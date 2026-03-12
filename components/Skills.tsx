@@ -17,7 +17,7 @@ const skills: SkillItem[] = [
   { name: 'Three.js', icon: Box },
   { name: 'Redux', icon: Cpu },
   { name: 'UI/UX', icon: Layout },
-  { name: 'Web Components', icon: Component },
+  { name: 'Web Cmpnts', icon: Component },
   { name: 'Algorithms', icon: Hash },
   { name: 'Responsive', icon: Laptop },
 ];
