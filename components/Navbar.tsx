@@ -1,11 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { 
-  Menu, X, Hexagon, Command, Aperture, 
-  Activity, Mountain, Cpu, Layers, Box, LucideIcon, 
-  Mail, Github, Linkedin, Instagram, ArrowRight
+  Menu, X, Github, Linkedin, Instagram, ArrowRight
 } from 'lucide-react';
 import { NavItem } from '../types';
 
@@ -27,7 +24,6 @@ const socialLinks = [
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [LogoIcon, setLogoIcon] = useState<LucideIcon>(() => Hexagon);
   
   const location = useLocation();
   const navigate = useNavigate();
@@ -38,9 +34,6 @@ export const Navbar: React.FC = () => {
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     
-    const logos = [Hexagon, Command, Aperture, Activity, Mountain, Cpu, Layers, Box];
-    setLogoIcon(() => logos[Math.floor(Math.random() * logos.length)]);
-    
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -49,7 +42,6 @@ export const Navbar: React.FC = () => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
-      // Optional: Add padding to prevent layout shift if needed
     } else {
       document.body.style.overflow = 'unset';
     }
@@ -88,8 +80,9 @@ export const Navbar: React.FC = () => {
     >
       <div className={`relative ${isMobile ? 'w-8 h-8' : 'w-9 h-9 sm:w-10 sm:h-10'} flex items-center justify-center`}>
          <div className="absolute inset-0 bg-gradient-to-br from-[#06b6d4] to-purple-600 rounded-lg blur-[2px] opacity-60 group-hover:opacity-100 transition-opacity"></div>
-         <div className="relative w-full h-full bg-[#0f172a] border border-white/10 rounded-lg flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-500">
-            <LogoIcon size={isMobile ? 16 : 18} strokeWidth={2.5} className="text-[#06b6d4]" />
+         <div className="relative w-full h-full bg-[#0f172a] border border-white/10 rounded-lg flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-500 overflow-hidden">
+            {/* এখানে আপনার logoicon.png বসানো হয়েছে */}
+            <img src="/logoicon.png" alt="Sohan Mahmud Logo" className="w-full h-full object-cover" />
          </div>
       </div>
       <div className="flex flex-col leading-tight overflow-hidden text-left">
@@ -232,7 +225,7 @@ export const Navbar: React.FC = () => {
               </a>
               
               <p className="text-[10px] text-gray-600 uppercase tracking-widest">Available for Remote Projects</p>
-            </div>
+            </div> 
           </motion.div>
         )}
       </AnimatePresence>
